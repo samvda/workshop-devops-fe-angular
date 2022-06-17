@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - wip
+      - pipeline*
 
 jobs:
   install:
@@ -50,7 +50,7 @@ jobs:
       - run: npm ci
       - run: npm run build:ci
       - name: Upload the build output
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: dist
           path: |
