@@ -106,7 +106,7 @@ jobs:
       - name: upload-artifact
         uses: actions/upload-artifact@v3
         with:
-          name: workshop-angular
+          name: dist
           path: dist
 
 
