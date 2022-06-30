@@ -4,10 +4,11 @@ on:
   push:
     branches:
       - main
-  jobs:
-    update_dependencies:
-      steps:
-        - run: npm ci
+jobs:
+  update_dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm ci
 
 
 # Steps
